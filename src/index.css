@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@100..900&display=swap');
+@import 'tailwindcss';
+
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+  /* Luxury Coffee Palette */
+  --color-espresso-50: #f8f4f0;
+  --color-espresso-100: #f0e9e1;
+  --color-espresso-200: #e1d3c2;
+  --color-espresso-300: #d2bda4;
+  --color-espresso-400: #c3a785;
+  --color-espresso-500: #b49166;
+  --color-espresso-600: #9a7a52;
+  --color-espresso-700: #7f633e;
+  --color-espresso-800: #644c2a;
+  --color-espresso-900: #4a3516;
+  
+  --color-cocoa-50: #fcf9f6;
+  --color-cocoa-100: #f8f3ee;
+  --color-cocoa-200: #f1e7dd;
+  --color-cocoa-300: #eadbcb;
+  --color-cocoa-400: #e3cfba;
+  --color-cocoa-500: #dbc3a8;
+  --color-cocoa-600: #c5b097;
+  --color-cocoa-700: #af9c86;
+  --color-cocoa-800: #998975;
+  --color-cocoa-900: #837564;
+  
+  --color-gold-50: #fdfcf9;
+  --color-gold-100: #fbf8f3;
+  --color-gold-200: #f7f1e7;
+  --color-gold-300: #f3eadb;
+  --color-gold-400: #eed3cf;
+  --color-gold-500: #eaccc3;
+  --color-gold-600: #d5b8b0;
+  --color-gold-700: #c0a49d;
+  --color-gold-800: #ab908a;
+  --color-gold-900: #967c77;
+  
+  --color-cream-50: #fffefc;
+  --color-cream-100: #fffdf9;
+  --color-cream-200: #fffaf3;
+  --color-cream-300: #fef7ed;
+  --color-cream-400: #fef4e7;
+  --color-cream-500: #fef1e1;
+  --color-cream-600: #e5d9cb;
+  --color-cream-700: #ccc2b5;
+  --color-cream-800: #b2aa9f;
+  --color-cream-900: #999189;
+  
+  --font-family-playfair-display: 'Playfair Display', serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-sans: 'Montserrat', system-ui, sans-serif;
+}
+/* stylelint-enable at-rule-no-unknown */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  color: #4a3516;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f4f0;
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Luxury utility classes */
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(74, 53, 22, 0.3);
+}
+
+.luxury-shadow-lg {
+  box-shadow: 0 20px 50px -15px rgba(74, 53, 22, 0.4);
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(190, 156, 100, 0.3);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(74, 53, 22, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(74, 53, 22, 0.18);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #eaccc3 0%, #d5b8b0 100%);
+}
+
+.gradient-gold-reverse {
+  background: linear-gradient(135deg, #d5b8b0 0%, #eaccc3 100%);
+}
+
+.gradient-cocoa {
+  background: linear-gradient(135deg, #dbc3a8 0%, #c5b097 100%);
+}
+
+.gradient-espresso {
+  background: linear-gradient(135deg, #4a3516 0%, #7f633e 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #eaccc3 0%, #d5b8b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #eaccc3, #d5b8b0);
+  border-radius: 2px;
+}
+
+.bg-gradient-espresso {
+  background: linear-gradient(135deg, #4a3516 0%, #644c2a 50%, #4a3516 100%);
+}
+
+.gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* stylelint-disable at-rule-no-unknown */
+@theme inline {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  
+  --color-background: var(--color-cream-50);
+  --color-foreground: var(--color-espresso-900);
+  --color-card: var(--color-cream-50);
+  --color-card-foreground: var(--color-espresso-900);
+  --color-popover: var(--color-cream-100);
+  --color-popover-foreground: var(--color-espresso-900);
+  --color-primary: var(--color-gold-600);
+  --color-primary-foreground: var(--color-cream-50);
+  --color-secondary: var(--color-cocoa-600);
+  --color-secondary-foreground: var(--color-cream-50);
+  --color-muted: var(--color-cocoa-200);
+  --color-muted-foreground: var(--color-cocoa-800);
+  --color-accent: var(--color-gold-500);
+  --color-accent-foreground: var(--color-espresso-900);
+  --color-destructive: #db2777;
+  --color-border: var(--color-cocoa-300);
+  --color-input: var(--color-cocoa-300);
+  --color-ring: var(--color-gold-500);
+  --color-chart-1: var(--color-espresso-500);
+  --color-chart-2: var(--color-cocoa-500);
+  --color-chart-3: var(--color-gold-500);
+  --color-chart-4: var(--color-cream-500);
+  --color-chart-5: var(--color-espresso-700);
+  --color-sidebar: var(--color-cream-100);
+  --color-sidebar-foreground: var(--color-espresso-900);
+  --color-sidebar-primary: var(--color-gold-600);
+  --color-sidebar-primary-foreground: var(--color-cream-50);
+  --color-sidebar-accent: var(--color-cocoa-200);
+  --color-sidebar-accent-foreground: var(--color-espresso-900);
+  --color-sidebar-border: var(--color-cocoa-300);
+  --color-sidebar-ring: var(--color-gold-500);
+}
+/* stylelint-enable at-rule-no-unknown */
+
+:root {
+  --radius: 1rem;
+  --background: #fffefc;
+  --foreground: #4a3516;
+  --card: #fffefc;
+  --card-foreground: #4a3516;
+  --popover: #fcf9f6;
+  --popover-foreground: #4a3516;
+  --primary: #d5b8b0;
+  --primary-foreground: #fffefc;
+  --secondary: #c5b097;
+  --secondary-foreground: #fffefc;
+  --muted: #f1e7dd;
+  --muted-foreground: #998975;
+  --accent: #eaccc3;
+  --accent-foreground: #4a3516;
+  --destructive: #db2777;
+  --border: #eadbcb;
+  --input: #eadbcb;
+  --ring: #eaccc3;
+  --chart-1: #b49166;
+  --chart-2: #dbc3a8;
+  --chart-3: #eaccc3;
+  --chart-4: #fffefc;
+  --chart-5: #7f633e;
+  --sidebar: #fcf9f6;
+  --sidebar-foreground: #4a3516;
+  --sidebar-primary: #d5b8b0;
+  --sidebar-primary-foreground: #fffefc;
+  --sidebar-accent: #f1e7dd;
+  --sidebar-accent-foreground: #4a3516;
+  --sidebar-border: #eadbcb;
+  --sidebar-ring: #eaccc3;
+}
+
+.dark {
+  --background: #4a3516;
+  --foreground: #f8f4f0;
+  --card: #7f633e;
+  --card-foreground: #f8f4f0;
+  --popover: #644c2a;
+  --popover-foreground: #f8f4f0;
+  --primary: #eaccc3;
+  --primary-foreground: #4a3516;
+  --secondary: #dbc3a8;
+  --secondary-foreground: #4a3516;
+  --muted: #9a7a52;
+  --muted-foreground: #f0e9e1;
+  --accent: #f3eadb;
+  --accent-foreground: #4a3516;
+  --destructive: #db2777;
+  --border: #9a7a52;
+  --input: #9a7a52;
+  --ring: #f3eadb;
+  --chart-1: #b49166;
+  --chart-2: #dbc3a8;
+  --chart-3: #eaccc3;
+  --chart-4: #fffefc;
+  --chart-5: #c3a785;
+  --sidebar: #644c2a;
+  --sidebar-foreground: #f8f4f0;
+  --sidebar-primary: #eaccc3;
+  --sidebar-primary-foreground: #4a3516;
+  --sidebar-accent: #9a7a52;
+  --sidebar-accent-foreground: #f8f4f0;
+  --sidebar-border: #9a7a52;
+  --sidebar-ring: #f3eadb;
+}
+
+/* stylelint-disable at-rule-no-unknown */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* stylelint-enable at-rule-no-unknown */
