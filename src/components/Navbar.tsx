@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.png';
+import CoffeeoLogo from '../assets/Coffeeo-Black.png';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
         transition={{ duration: 0.25 }}
       >
         <img
-          src={logo}
+          src={CoffeeoLogo}
           alt="Coffeeo Logo"
           className="h-12 w-auto object-contain"
         />
