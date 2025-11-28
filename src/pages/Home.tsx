@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/HeroSection';
 import FeaturedProducts from '../components/FeaturedProducts';
-import dhee from '../assets/3.jpg';
-import dheee from '../assets/3.jpg';
 import StoreSection from "../components/StoreSection";
 import FeatureSection from '../components/FeatureSection';
+import { g } from 'framer-motion/client';
 
 const Home: React.FC = () => {
   return (
@@ -60,7 +59,7 @@ const Home: React.FC = () => {
       <section
         className="py-1 text-white relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${dhee})` ,
+          backgroundImage: `url()` ,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
