@@ -21,9 +21,7 @@ const Navbar: React.FC = () => {
         whileHover={{ scale: 1.12 }}
         transition={{ duration: 0.25 }}
       >
-        <img
-          src={CoffeeoLogo}
-          alt="Coffeeo Logo"
+        <img src="/Coffeeo-Black.png" alt="Logo"
           className="h-12 w-auto object-contain"
         />
       </motion.div>

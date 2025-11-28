@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import hero from '../assets/hero1.jpg';
 
 type Props = {
   imageSrc?: string;
@@ -11,9 +10,9 @@ type Props = {
 
 
 export default function HeroSectionRealPhoto({
-  imageSrc = hero,
+  imageSrc = "/hero1.jpg",
   imageAlt = 'Cup of premium coffee...',
-  previewSrc = hero,   // 👈 fallback
+  previewSrc = "/hero1.jpg",   // 👈 fallback
 }: Props) {
   return (
     <section className="relative overflow-hidden bg-espresso-900">

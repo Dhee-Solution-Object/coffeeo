@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import s1 from "../assets/store/store1.jpg";
-import s2 from "../assets/store/store2.jpg";
-import s3 from "../assets/store/store3.jpg";
-import s4 from "../assets/store/store4.jpg";
+
 
 type Store = {
   id: number;
@@ -27,7 +24,7 @@ const stores: Store[] = [
     city: "Hiriyur",
     phone: "+91 80 1234 5678",
     hours: "Mon–Sun: 7:00 AM – 10:00 PM",
-    image: s1,
+    image: "/store1.jpg",
     lat: 12.9719,
     lng: 77.6412,
     location: "EaQJ2MAY8hnzpe4S7"   
@@ -39,7 +36,7 @@ const stores: Store[] = [
     city: "Sira",
     phone: "+91 80 2345 6789",
     hours: "Mon–Sun: 7:30 AM – 11:00 PM",
-    image: s2,
+    image: "/store2.jpg"    ,
     lat: 12.9352,
     lng: 77.6245,
     location: "Wikjii3A2y5WEuCP7"
@@ -52,7 +49,7 @@ const stores: Store[] = [
     city: "Bengaluru",
     phone: "—",
     hours: "Launching Soon",
-    image: s4, // use an aesthetic placeholder image
+    image: "/store3.jpg", // use an aesthetic placeholder image
     location: "",
   },
 ];

@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import s1 from "../assets/store/store1.jpg";
-import s2 from "../assets/store/store2.jpg";
-import s3 from "../assets/store/store3.jpg";
-import s4 from "../assets/store/store4.jpg";
 
-const storeImages = [s1, s2, s3, s4];
+const storeImages = [
+  "/store1.jpg",
+  "/store2.jpg",
+  "/store3.jpg",
+  "/store4.jpg",
+];
+
 
 
 const StoreSection: React.FC = () => {
