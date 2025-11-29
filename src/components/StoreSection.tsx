@@ -2,13 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const storeImages = [
-  "/store1.jpg",
-  "/store2.jpg",
-  "/store3.jpg",
-  "/store4.jpg",
+  "/store/store1.jpg",
+  "/store/store2.jpg",
+  "/store/store3.jpg",
+  "/store/store4.jpg",
 ];
-
-
 
 const StoreSection: React.FC = () => {
   return (
